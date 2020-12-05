@@ -7,22 +7,7 @@ export default function Home() {
         <h1>Heather Peterson</h1>
         <h3>Fullstack Software Developer</h3>
       </header>
-      <nav>
-        <ul>
-          <li>
-            Home
-          </li>
-          <li>
-            Projects
-          </li>
-          <li>
-            About Me
-          </li>
-          <li>
-            Contact
-          </li>
-        </ul>
-      </nav>
+
       <main>
         <div>
           <h3>Projects</h3>
