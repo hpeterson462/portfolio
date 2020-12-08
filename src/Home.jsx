@@ -1,4 +1,18 @@
 import React from 'react';
+import {
+  //DiGithubBadge,
+  DiHtml5,
+  DiJsBadge,
+  DiNodejsSmall,
+  DiReact,
+  DiSass,
+  DiCss3
+} from 'react-icons/di';
+
+import {
+  //SiLinkedin,
+  SiPostgresql
+} from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -31,13 +45,28 @@ export default function Home() {
 
         <section>
           <h3 className="text-2xl text-blue">Tech Stack</h3>
-          <div className="bg-gray-50 p-5 m-3 rounded-sm">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div className="bg-gray-50 p-5 m-3 rounded-sm flex flex-row flex-wrap items-center justify-center">
+            <div className="p-5">
+              <DiHtml5 size={90} />
+            </div>
+            <div className="p-5">
+              <DiJsBadge size={90} />
+            </div>
+            <div className="p-5">
+              <DiReact size={90} />
+            </div>
+            <div className="p-5">
+              <DiCss3 size={90} />
+            </div>
+            <div className="p-5">
+              <DiSass size={90} />
+            </div>
+            <div className="p-5">
+              <DiNodejsSmall size={90} />
+            </div>
+            <div className="p-5">
+              <SiPostgresql size={90} />
+            </div>
           </div>
         </section>
 
