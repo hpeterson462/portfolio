@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  //DiGithubBadge,
+  DiGithubBadge,
   DiHtml5,
   DiJsBadge,
   DiNodejsSmall,
@@ -8,11 +8,11 @@ import {
   DiSass,
   DiCss3
 } from 'react-icons/di';
-
 import {
-  //SiLinkedin,
+  SiLinkedin,
   SiPostgresql
 } from 'react-icons/si';
+import { ImFileText } from "react-icons/im";
 
 export default function Home() {
   return (
@@ -75,12 +75,20 @@ export default function Home() {
         <footer className="bg-dots2 bg-contain bg-no-repeat p-20">
           <h3 className="text-2xl italic">Contact</h3>
           <br />
-          <p>Get in touch!</p>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <p>/hpeterson462</p>
-          <img src="" alt="" />
-          <p>Resume</p>
+          <div className="bg-gray-50 p-5 m-3 rounded-sm">
+            <p className="italic text-blue">Get in touch!</p>
+            <div className="flex flex-row items-center justify-center p-5">
+              <DiGithubBadge size={40} />
+              <SiLinkedin size={25} />
+              <span className="p-2">
+                /hpeterson462
+            </span>
+            </div>
+            <div className="flex flex-row items-center justify-center">
+              <ImFileText size={25} />
+              <span className="pl-2">Resume</span>
+            </div>
+          </div>
         </footer>
       </div>
     </div >
