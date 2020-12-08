@@ -21,7 +21,7 @@ export default function Home() {
 
           <div>
             <h3 className="text-2xl italic">About Me</h3>
-            <p>
+            <p className="bg-gray-50 p-5 m-3 rounded-sm">
               I’m a full-stack software developer with a passion for solving human-based problems, collaborating with a great team, and the great outdoors. On previous projects, I’ve used test-driven development to create PostgreSQL databases using RESTful APIs that distill information down into JavaScript and React user interfaces with CSS and Sass designs. I’m excited to continue discovering, learning, and working with amazing people.
             </p>
           </div>
@@ -31,12 +31,14 @@ export default function Home() {
 
         <section>
           <h3 className="text-2xl text-blue">Tech Stack</h3>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div className="bg-gray-50 p-5 m-3 rounded-sm">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
         </section>
 
         <br />
