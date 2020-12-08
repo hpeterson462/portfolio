@@ -2,13 +2,14 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        <h1>Heather Peterson</h1>
-        <h3>Fullstack Software Developer</h3>
-      </header>
-
+    <div className="flex text-center items-center">
       <main>
+        <header className="bg-">
+          <h1 className="text-5xl">Heather Peterson</h1>
+          <br />
+          <h3 className="text-3xl">Fullstack Software Developer</h3>
+        </header>
+        <br />
         <div>
           <h3>Projects</h3>
         </div>
