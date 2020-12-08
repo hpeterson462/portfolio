@@ -7,8 +7,13 @@ module.exports = {
         'display': ["Roboto", "sans-serif", "Ariel"]
       },
       backgroundImage: theme => ({
-        'keyboard': "url('/public/black-white-keyboard.png')",
-      })
+        'dots': "url('/src/assets/dots.png')",
+        'dots2': "url('/src/assets/dots2.png')",
+      }),
+      textColor: {
+        'blue': '#7cd6dc',
+        'gray': '#454545',
+      }
     },
   },
   variants: {
