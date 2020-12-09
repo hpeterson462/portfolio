@@ -25,7 +25,7 @@ export default function Navbar({ fixed }) {
             <ul className="flex">
               <li>
                 <a
-                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
+                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-5 hover:opacity-75"
                   href="#projects"
                 >
                   Projects
@@ -33,7 +33,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
+                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-5 hover:opacity-75"
                   href="#aboutme"
                 >
                   About Me
@@ -41,7 +41,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
+                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-5 hover:opacity-75"
                   href="#techstack"
                 >
                   Tech Stack
@@ -49,7 +49,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
+                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-5 hover:opacity-75"
                   href="#contact"
                 >
                   Contact
