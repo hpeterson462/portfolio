@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Menu({ open }) {
   return (
-    <div open={open} className="flex flex-col bg-gray-500 bg-opacity-5 p-20 w-3/6 rounded-sm absolute">
+    <div open={open} className="flex flex-col bg-gray-500 bg-opacity-5 p-20 w-3/6 rounded-sm absolute hidden">
       <a href="/" className="p-5 rounded-sm hover:text-white hover:bg-gray-900 hover:bg-opacity-20">
         Home
     </a>
