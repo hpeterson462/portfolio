@@ -31,7 +31,7 @@ export default function Home() {
 
           <main>
             <div>
-              <h3 className="text-2xl text-blue">Projects</h3>
+              <h3 className="text-2xl text-lightBlue">Projects</h3>
             </div>
 
             <br />
@@ -47,7 +47,7 @@ export default function Home() {
           <br />
 
           <section>
-            <h3 className="text-2xl text-blue">Tech Stack</h3>
+            <h3 className="text-2xl text-lightBlue">Tech Stack</h3>
             <div className="bg-gray-50 p-5 m-5 rounded-sm flex flex-row flex-wrap items-center justify-center">
               <div className="p-5">
                 <DiHtml5 size={90} />
@@ -79,7 +79,7 @@ export default function Home() {
             <h3 className="text-2xl italic">Contact</h3>
             <br />
             <div className="bg-gray-50 p-5 m-5 rounded-sm">
-              <p className="text-2xl italic text-blue">Get in touch!</p>
+              <p className="text-2xl italic text-lightBlue">Get in touch!</p>
               <div className="flex flex-row items-center justify-center p-5">
                 <DiGithubBadge size={40} />
                 <SiLinkedin size={25} />

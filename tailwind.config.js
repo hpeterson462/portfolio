@@ -11,8 +11,8 @@ module.exports = {
         'dots2': "url('/src/assets/dots2.png')",
       }),
       textColor: {
-        'blue': '#7cd6dc',
-        'gray': '#454545',
+        'lightBlue': '#7cd6dc',
+        'lightGray': '#454545',
       }
     },
   },
