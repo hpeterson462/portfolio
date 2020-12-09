@@ -5,11 +5,11 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-pink-500 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-red-400 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
           <div className="w-full relative flex justify-between">
             <button
-              className="text-white cursor-pointer text-xl px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none focus:outline-none"
+              className="text-white cursor-pointer text-xl px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none hover:opacity-75 focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -25,7 +25,7 @@ export default function Navbar({ fixed }) {
             <ul className="flex">
               <li>
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
                   href="#projects"
                 >
                   Projects
@@ -33,7 +33,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
                   href="#aboutme"
                 >
                   About Me
@@ -41,7 +41,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
                   href="#techstack"
                 >
                   Tech Stack
@@ -49,7 +49,7 @@ export default function Navbar({ fixed }) {
               </li>
               <li>
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white text-lg hover:opacity-75"
                   href="#contact"
                 >
                   Contact
