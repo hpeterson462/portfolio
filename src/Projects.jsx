@@ -3,7 +3,12 @@ import React from 'react';
 export default function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <div>
+        <h3 className="text-2xl text-lightBlue">Projects</h3>
+      </div>
+
+      <br />
+
       <div>
         <h3>PageTrade</h3>
         <img src="" alt="PageTrade thumbnail" />

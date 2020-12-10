@@ -1,5 +1,6 @@
 import React from 'react';
-import Nav from './menu/Nav';
+import Nav from './Nav';
+import Projects from './Projects';
 import {
   DiGithubBadge,
   DiHtml5,
@@ -30,9 +31,7 @@ export default function Home() {
           <br />
 
           <main>
-            <div>
-              <h3 className="text-2xl text-lightBlue">Projects</h3>
-            </div>
+            <Projects />
 
             <br />
 
