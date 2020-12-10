@@ -32,29 +32,82 @@ export default function TechStack() {
         </section>
 
         <section className="p-5 flex items-center justify-around">
-          <div className="inset-0 mb-28">
-            JavaScript
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              JavaScript
           </div>
-          <div className="absolute p-20 transform hover:translate-y-10 transition duration-300">
-            <DiJsBadge size={150} />
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <DiJsBadge size={150} />
+              </div>
+            </div>
           </div>
         </section>
 
-        <div className="p-10">
-          <DiReact size={150} />
-        </div>
-        <div className="p-10">
-          <DiCss3 size={150} />
-        </div>
-        <div className="p-10">
-          <DiSass size={150} />
-        </div>
-        <div className="p-10">
-          <DiNodejsSmall size={150} />
-        </div>
-        <div className="p-10">
-          <SiPostgresql size={150} />
-        </div>
+        <section className="p-5 flex items-center justify-around">
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              React
+          </div>
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <DiReact size={150} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="p-5 flex items-center justify-around">
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              CSS
+          </div>
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <DiCss3 size={150} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="p-5 flex items-center justify-around">
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              Sass
+          </div>
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <DiSass size={150} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="p-5 flex items-center justify-around">
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              Node.js
+          </div>
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <DiNodejsSmall size={150} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="p-5 flex items-center justify-around">
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              PostgreSQL
+          </div>
+            <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
+              <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
+                <SiPostgresql size={150} />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )
