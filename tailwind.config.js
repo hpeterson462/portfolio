@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.js', './public/index.html'],
-  darkMode: 'media', //media or class
+  darkMode: 'media', //false, media, or class
   theme: {
     extend: {
       fontFamily: {
