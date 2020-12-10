@@ -13,7 +13,12 @@ module.exports = {
       textColor: {
         'lightBlue': '#7cd6dc',
         'lightGray': '#454545',
-      }
+      },
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'lightBlue': '#7cd6dc',
+        'darkGray': '#454545',
+      })
     },
   },
   variants: {
