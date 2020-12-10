@@ -10,22 +10,20 @@ export default function Contact() {
 
       <br />
 
-      <div className="min-h-screen py-48">
-        <div className="">
-          <p className="text-4xl italic text-lightBlue p-2">Get in touch!</p>
-          <div className="flex flex-row items-center justify-center p-5">
-            <DiGithubBadge size={40} />
-            <SiLinkedin size={25} />
-            <span className="p-2">
-              /hpeterson462
+      <div className="min-h-screen pt-48">
+        <p className="text-4xl italic text-lightBlue p-2">Get in touch!</p>
+        <div className="flex flex-row items-center justify-center p-5">
+          <DiGithubBadge size={70} />
+          <SiLinkedin size={40} />
+          <span className="p-2 text-xl">
+            /hpeterson462
             </span>
-          </div>
-          <div className="flex flex-row items-center justify-center">
-            <ImFileText size={25} />
-            <span className="pl-2">Resume</span>
-          </div>
-          <footer className="bg-dots2 bg-contain bg-no-repeat bg-right pb-80 flex items-center"></footer>
         </div>
+        <div className="flex flex-row items-center justify-center">
+          <ImFileText size={40} />
+          <span className="pl-2 text-xl">Resume</span>
+        </div>
+        <footer className="bg-dots2 bg-contain bg-no-repeat bg-right pb-80 flex items-center"></footer>
       </div>
     </div>
   )
