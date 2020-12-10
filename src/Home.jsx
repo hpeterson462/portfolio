@@ -22,8 +22,8 @@ export default function Home() {
       <Nav />
       <div className="flex text-center items-center">
         <div>
-          <header className="bg-dots bg-contain bg-no-repeat bg-left-top p-20 pr-10 mt-20 min-h-screen">
-            <h1 className="flex justify-center text-7xl font-bold mt-32">Heather Peterson</h1>
+          <header className="bg-dots bg-contain bg-no-repeat bg-left-top p-20 pr-10 mt-10 min-h-screen">
+            <h1 className="flex justify-center text-8xl font-bold mt-32">Heather Peterson</h1>
             <br />
             <h3 className="text-3xl italic">Fullstack Software Developer</h3>
           </header>
