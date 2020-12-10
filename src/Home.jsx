@@ -2,20 +2,8 @@ import React from 'react';
 import Nav from './Nav';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
-import {
-  DiGithubBadge,
-  DiHtml5,
-  DiJsBadge,
-  DiNodejsSmall,
-  DiReact,
-  DiSass,
-  DiCss3
-} from 'react-icons/di';
-import {
-  SiLinkedin,
-  SiPostgresql
-} from 'react-icons/si';
-import { ImFileText } from "react-icons/im";
+import TechStack from './TechStack';
+import Contact from './Contact';
 
 export default function Home() {
   return (
@@ -39,54 +27,11 @@ export default function Home() {
 
           <br />
 
-          <section>
-            <h3 className="text-2xl text-lightBlue">Tech Stack</h3>
-            <div className="bg-gray-50 p-5 m-5 rounded-sm flex flex-row flex-wrap items-center justify-center">
-              <div className="p-5">
-                <DiHtml5 size={90} />
-              </div>
-              <div className="p-5">
-                <DiJsBadge size={90} />
-              </div>
-              <div className="p-5">
-                <DiReact size={90} />
-              </div>
-              <div className="p-5">
-                <DiCss3 size={90} />
-              </div>
-              <div className="p-5">
-                <DiSass size={90} />
-              </div>
-              <div className="p-5">
-                <DiNodejsSmall size={90} />
-              </div>
-              <div className="p-5">
-                <SiPostgresql size={90} />
-              </div>
-            </div>
-          </section>
+          <TechStack />
 
           <br />
 
-          <section>
-            <h3 className="text-2xl italic">Contact</h3>
-            <br />
-            <div className="bg-gray-50 p-5 m-5 rounded-sm">
-              <p className="text-2xl italic text-lightBlue">Get in touch!</p>
-              <div className="flex flex-row items-center justify-center p-5">
-                <DiGithubBadge size={40} />
-                <SiLinkedin size={25} />
-                <span className="p-2">
-                  /hpeterson462
-            </span>
-              </div>
-              <div className="flex flex-row items-center justify-center">
-                <ImFileText size={25} />
-                <span className="pl-2">Resume</span>
-              </div>
-            </div>
-          </section>
-          <footer className="bg-dots2 bg-contain bg-no-repeat bg-right p-40"></footer>
+          <Contact />
         </div>
       </div >
     </div>
