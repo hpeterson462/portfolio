@@ -17,9 +17,17 @@ export default function TechStack() {
       <br />
 
       <div className="flex flex-row flex-wrap items-center justify-center bg-gray-50 min-h-screen">
-        <div className="p-10">
-          <DiHtml5 size={150} />
-        </div>
+        <section className="p-5 flex items-center justify-around">
+          <div className="inset-0 mb-28">
+            HTML
+          </div>
+          <div className="absolute p-10 transform hover:translate-y-10 transition duration-300">
+            <div className="flex justify-center">
+              <DiHtml5 size={160} />
+            </div>
+          </div>
+        </section>
+
         <div className="p-10">
           <DiJsBadge size={150} />
         </div>
