@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: theme => ({
         'dots': "url('/src/assets/dots.png')",
         'dots2': "url('/src/assets/dots2.png')",
+        'pageTrade': "url('/src/assets/pageTrade.png')",
+        'sherlockStocks': "url('/src/assets/sherlockStocks.png')",
+        'cumulus': "url('/src/assets/cumulus.png')",
       }),
       textColor: {
         'lightBlue': '#7cd6dc',
