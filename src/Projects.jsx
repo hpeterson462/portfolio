@@ -9,8 +9,8 @@ export default function Projects() {
 
       <br />
 
-      <main className="flex flex-row bg-lightBlue justify-evenly items-center">
-        <section className="p-10 min-h-screen flex items-center justify-around bg-lightBlue flex-wrap">
+      <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen">
+        <section className="p-5 flex items-center justify-around">
           <div className="h-48 w-48 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               PageTrade
@@ -21,7 +21,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-10 min-h-screen flex items-center justify-around bg-lightBlue flex-wrap">
+        <section className="p-5 flex items-center justify-around">
           <div className="h-48 w-48 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Sherlock Stocks
@@ -32,7 +32,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-10 min-h-screen flex items-center justify-around bg-lightBlue flex-wrap">
+        <section className="p-5 flex items-center justify-around">
           <div className="h-48 w-48 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Cumulus
