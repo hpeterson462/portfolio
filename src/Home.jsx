@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import Projects from './Projects';
+import AboutMe from './AboutMe';
 import {
   DiGithubBadge,
   DiHtml5,
@@ -30,18 +31,11 @@ export default function Home() {
 
           <br />
 
-          <main>
-            <Projects />
+          <Projects />
 
-            <br />
+          <br />
 
-            <div>
-              <h3 className="text-2xl italic">About Me</h3>
-              <p className="bg-gray-50 p-5 m-5 rounded-sm">
-                I’m a full-stack software developer with a passion for solving human-based problems, collaborating with a great team, and the great outdoors. On previous projects, I’ve used test-driven development to create PostgreSQL databases using RESTful APIs that distill information down into JavaScript and React user interfaces with CSS and Sass designs. I’m excited to continue discovering, learning, and working with amazing people.
-            </p>
-            </div>
-          </main>
+          <AboutMe />
 
           <br />
 
