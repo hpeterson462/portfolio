@@ -18,6 +18,12 @@ module.exports = {
         ...theme('colors'),
         'lightBlue': '#7cd6dc',
         'darkGray': '#454545',
+      }),
+      gradientColorStops: theme => ({
+        ...theme('colors'),
+        'lightBlue': '#7cd6dc',
+        'lightGray': '#454545',
+        'darkGray': '#454545',
       })
     },
   },
