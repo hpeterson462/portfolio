@@ -16,7 +16,7 @@ export default function TechStack() {
 
       <br />
 
-      <div className="flex flex-row flex-wrap items-center justify-center bg-gray-50 min-h-screen">
+      <div className="flex flex-row flex-wrap items-center justify-center bg-lightBlue min-h-screen">
 
         <section className="p-5 flex items-center justify-around">
           <div className="h-52 w-52 relative cursor-pointer mb-5">

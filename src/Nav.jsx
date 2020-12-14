@@ -5,7 +5,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-200 mb-3 shadow-md z-10 w-screen transform transition duration-300">
+      <nav className="fixed flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-200 mb-3 shadow-md z-10 w-screen">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
           <div className="w-full relative flex justify-between">
             <button
