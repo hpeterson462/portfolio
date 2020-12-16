@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Form from './Form';
 import { SiLinkedin } from 'react-icons/si';
-import { ImFileText } from "react-icons/im";
-import { FaGithubSquare } from "react-icons/fa";
+import { ImFileText } from 'react-icons/im';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Contact() {
 
@@ -41,8 +42,9 @@ export default function Contact() {
               </div>
               <span className="pl-2 text-2xl">Resume</span>
             </div>
-            <div className=""></div>
           </div>
+
+          <Form />
 
         </div>
       </div>
