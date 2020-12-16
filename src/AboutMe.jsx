@@ -3,10 +3,11 @@ import heather from './assets/heather.png';
 
 export default function AboutMe() {
   return (
-    <div>
+    <div className="mt-20">
       <h3 className="text-5xl italic" id="aboutme">About Me</h3>
 
       <br />
+
       <div className="flex flex-row">
         <div className="flex justify-center items-center bg-gray-50 leading-10 w-3/5 p-5 m-5 min-h-screen text-2xl">
           <p>

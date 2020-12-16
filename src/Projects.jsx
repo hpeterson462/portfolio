@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div>
       <div>
-        <h3 className="text-5xl text-lightBlue" id="projects">Projects</h3>
+        <h3 className="text-5xl text-lightBlue  mb-5" id="projects">Projects</h3>
       </div>
 
       <br />
@@ -44,7 +44,6 @@ export default function Projects() {
           </div>
         </section>
       </main>
-
     </div>
   )
 }

@@ -26,7 +26,7 @@ export default function Navbar({ fixed }) {
             <ul className="flex">
               <li>
                 <Link
-                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md px-10 p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
                   to="#home"
                 >
                   Home

@@ -6,6 +6,9 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import Projects from './Projects';
+import AboutMe from './AboutMe';
+import TechStack from './TechStack';
+import Contact from './Contact';
 
 export default function App() {
   return (
@@ -14,8 +17,9 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/aboutme" component={AboutMe} />
+          <Route exact path="/techstack" component={TechStack} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </Router>
     </div>
