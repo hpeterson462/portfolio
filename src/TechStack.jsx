@@ -12,7 +12,7 @@ import { SiPostgresql } from 'react-icons/si';
 export default function TechStack() {
   return (
     <div>
-      <h3 className="text-5xl text-lightBlue">Tech Stack</h3>
+      <h3 className="text-5xl text-lightBlue" id="techstack">Tech Stack</h3>
 
       <br />
 

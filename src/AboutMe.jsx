@@ -4,7 +4,7 @@ import heather from './assets/heather.png';
 export default function AboutMe() {
   return (
     <div>
-      <h3 className="text-5xl italic">About Me</h3>
+      <h3 className="text-5xl italic" id="aboutme">About Me</h3>
 
       <br />
       <div className="flex flex-row">

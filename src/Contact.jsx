@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 export default function Contact() {
   return (
     <div>
-      <h3 className="text-5xl italic">Contact</h3>
+      <h3 className="text-5xl italic" id="contact">Contact</h3>
 
       <br />
 
@@ -52,7 +52,7 @@ export default function Contact() {
                 <textarea class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"></textarea>
               </div>
             </section>
-            <button className="text-darkGray italic shadow hover:bg-lightBlue cursor-pointer focus:shadow-outline py-2 px-4 rounded" type="button">
+            <button className="text-darkGray shadow hover:bg-lightBlue cursor-pointer focus:shadow-outline py-2 px-4 rounded" type="button">
               Send
           </button>
           </form>

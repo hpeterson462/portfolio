@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import { TiThMenu } from "react-icons/ti";
 
 export default function Navbar({ fixed }) {
@@ -24,36 +25,44 @@ export default function Navbar({ fixed }) {
           >
             <ul className="flex">
               <li>
-                <a
-                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
-                  href="#projects"
+                <Link
+                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  to="#home"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="flex items-center uppercase  tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  to="#projects"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
-                  href="#aboutme"
+                <Link
+                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  to="#aboutme"
                 >
                   About Me
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
-                  href="#techstack"
+                <Link
+                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  to="#techstack"
                 >
                   Tech Stack
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="flex items-center uppercase font-bold leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
-                  href="#contact"
+                <Link
+                  className="flex items-center uppercase tracking-wide leading-snug text-white text-md p-8 hover:opacity-75 rounded hover:shadow-md transition duration-500 ease-in-out"
+                  to="#contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
