@@ -9,6 +9,7 @@ import Projects from './Projects';
 import AboutMe from './AboutMe';
 import TechStack from './TechStack';
 import Contact from './Contact';
+import Resume from './Resume';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route exact path="/aboutme" component={AboutMe} />
           <Route exact path="/techstack" component={TechStack} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/resume" component={Resume} />
         </Switch>
       </Router>
     </div>
