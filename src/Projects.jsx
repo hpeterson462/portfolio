@@ -1,6 +1,18 @@
 import React from 'react';
 
 export default function Projects() {
+  const handlePClick = () => {
+    window.location.replace('https://page-trade.netlify.app/')
+  }
+
+  const handleSClick = () => {
+    window.location.replace('https://sherlockstocks.netlify.app/')
+  }
+
+  const handleCClick = () => {
+    window.location.replace('https://cumuli.netlify.app/')
+  }
+
   return (
     <div>
       <div>
@@ -17,7 +29,7 @@ export default function Projects() {
               PageTrade
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center"></div>
+              <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePClick}></div>
             </div>
           </div>
         </section>
@@ -28,7 +40,7 @@ export default function Projects() {
               Sherlock Stocks
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover"></div>
+              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSClick}></div>
             </div>
           </div>
         </section>
@@ -39,7 +51,7 @@ export default function Projects() {
               Cumulus
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover"></div>
+              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCClick}></div>
             </div>
           </div>
         </section>
