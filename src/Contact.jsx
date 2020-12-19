@@ -23,7 +23,7 @@ export default function Contact() {
       <br />
 
       <div className="min-h-screen pt-5">
-        <p className="text-4xl text-lightBlue p-2">Get in touch!</p>
+        <p className="bg-gray-50 p-5 w-2/6 m-auto rounded text-4xl text-lightBlue p-2">Get in touch!</p>
 
         <div className="flex flex-row flex-wrap items-center justify-center p-5">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
