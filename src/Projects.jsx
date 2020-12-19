@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Projects() {
   const handlePageTClick = () => {
@@ -37,6 +38,9 @@ export default function Projects() {
       <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen">
 
         <section className="p-5 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               PageTrade
@@ -51,6 +55,9 @@ export default function Projects() {
         </section>
 
         <section className="p-5 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Sherlock Stocks
@@ -65,6 +72,9 @@ export default function Projects() {
         </section>
 
         <section className="p-5 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Cumulus
