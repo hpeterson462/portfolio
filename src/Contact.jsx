@@ -27,10 +27,10 @@ export default function Contact() {
         <div className="flex flex-row flex-wrap items-center justify-center p-5">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
             <div className="flex items-center justify-center p-5 pt-10">
-              <div className="hover:text-red-400 hover:shadow-md cursor-pointer pr-1">
+              <div className="hover:text-red-400 cursor-pointer transition duration-500 ease-in-out text-lightGray pr-1">
                 <FaGithubSquare size={45} onClick={handleGitClick} />
               </div>
-              <div className="hover:text-red-400 hover:shadow-md cursor-pointer">
+              <div className="hover:text-red-400 cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <SiLinkedin size={40} onClick={handleLiClick} />
               </div>
               <span className="p-2 text-2xl">
@@ -38,7 +38,7 @@ export default function Contact() {
             </span>
             </div>
             <div className="flex items-center justify-center">
-              <div className="hover:text-red-400 shadow-md cursor-pointer">
+              <div className="hover:text-red-400 cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <Link to="/resume">
                   <ImFileText size={40} />
                 </Link>
