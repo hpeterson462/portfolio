@@ -38,7 +38,7 @@ export default function Contact() {
             </span>
             </div>
             <div className="flex items-center justify-center">
-              <div className="hover:text-red-400 hover:shadow-md cursor-pointer">
+              <div className="hover:text-red-400 shadow-md cursor-pointer">
                 <Link to="/resume">
                   <ImFileText size={40} />
                 </Link>

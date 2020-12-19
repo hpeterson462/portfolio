@@ -5,12 +5,12 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex flex-wrap fixed items-center justify-between z-10 w-screen">
+      <nav className="flex flex-wrap absolute items-center justify-between z-10 w-screen h-5">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
           <ul className="flex">
             <li>
               <Link
-                className="flex items-center uppercase tracking-wide leading-snug text-red text-md px-10 p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
+                className="flex items-center uppercase tracking-wide leading-snug cursor-pointer text-md p-8 mr-5 hover:text-red-400 w-20 transition duration-500 ease-in-out"
                 to="#home"
               >
                 Home
@@ -18,7 +18,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="flex items-center uppercase  tracking-wide leading-snug text-red text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
+                className="flex items-center uppercase tracking-wide leading-snug text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
                 to="#projects"
               >
                 Projects
@@ -26,7 +26,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="flex items-center uppercase tracking-wide leading-snug text-red text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
+                className="flex items-center uppercase tracking-wide leading-snug text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
                 to="#aboutme"
               >
                 About Me
@@ -34,7 +34,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="flex items-center uppercase tracking-wide leading-snug text-red text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
+                className="flex items-center uppercase tracking-wide leading-snug text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
                 to="#techstack"
               >
                 Tech Stack
@@ -42,7 +42,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="flex items-center uppercase tracking-wide leading-snug text-red text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
+                className="flex items-center uppercase tracking-wide leading-snug text-md p-8 hover:text-red-400 hover:w-20 transition duration-500 ease-in-out"
                 to="#contact"
               >
                 Contact

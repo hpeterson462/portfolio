@@ -27,7 +27,7 @@ module.exports = {
         'lightBlue': '#7cd6dc',
         'lightGray': '#454545',
         'darkGray': '#454545',
-      })
+      }),
     },
   },
   variants: {
