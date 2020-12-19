@@ -8,6 +8,7 @@ import {
   DiCss3
 } from 'react-icons/di';
 import { SiPostgresql } from 'react-icons/si';
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function TechStack() {
   return (
@@ -17,6 +18,9 @@ export default function TechStack() {
       <br />
 
       <div className="flex flex-row flex-wrap items-center justify-center bg-lightBlue min-h-screen">
+        <div className="flex justify-center animate-bounce text-lightGray">
+          <IoIosArrowDown size={30} />
+        </div>
 
         <section className="p-5 flex items-center justify-around">
           <div className="h-52 w-52 relative cursor-pointer mb-5">
@@ -108,6 +112,9 @@ export default function TechStack() {
             </div>
           </div>
         </section>
+        <div className="flex justify-center animate-bounce text-lightGray">
+          <IoIosArrowDown size={30} />
+        </div>
       </div>
     </div>
   )
