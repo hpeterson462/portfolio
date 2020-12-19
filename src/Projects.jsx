@@ -49,7 +49,7 @@ export default function Projects() {
               <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePageTClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handlePageTGithubClick}>
+          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handlePageTGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
@@ -66,7 +66,7 @@ export default function Projects() {
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSherlockClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleSherlockGithubClick}>
+          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleSherlockGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function Projects() {
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCumulusClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleCumulusGithubClick}>
+          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleCumulusGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
