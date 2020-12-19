@@ -21,9 +21,9 @@ export default function Form() {
   return (
     <div className="w-4/12">
       <form>
-        < section className="flex flex-wrap mb-6" >
+        < section className="flex flex-wrap mb-2" >
           < div className="w-full px-3" >
-            <label className="block text-darkGray mb-2 italic" htmlFor="email">
+            <label className="block text-darkGray mb-3 italic text-lg" htmlFor="email">
               E-mail
             </label>
             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="text" value={email} onChange={e => setEmail(e.target.value)} />
@@ -31,13 +31,13 @@ export default function Form() {
         </section >
         <section className="flex flex-wrap mb-6">
           <div className="w-full px-3">
-            <label className="block tracking-wide text-darkGray mb-2 italic">
+            <label className="block tracking-wide text-darkGray mb-3 italic text-lg">
               Message
             </label>
-            <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" type="text" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
+            <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" type="text" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
           </div>
         </section>
-        <button className="text-darkGray shadow hover:bg-lightBlue cursor-pointer focus:shadow-outline focus:outline-none py-1 px-4 rounded transition duration-500 ease-in-out" onClick={handleClick}>
+        <button className="text-darkGray shadow italic hover:bg-lightBlue cursor-pointer focus:shadow-outline focus:outline-none py-1 px-4 rounded transition duration-500 ease-in-out" onClick={handleClick}>
           Send
         </button>
       </form >
