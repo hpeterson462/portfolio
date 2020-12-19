@@ -4,6 +4,7 @@ import Projects from './Projects';
 import AboutMe from './AboutMe';
 import TechStack from './TechStack';
 import Contact from './Contact';
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -15,6 +16,11 @@ export default function Home() {
             <h1 className="flex justify-center text-8xl font-bold mt-32">Heather Peterson</h1>
             <br />
             <h3 className="text-3xl italic">Fullstack Software Developer</h3>
+            <div className="flex flex-col mt-10 animate-pulse">
+              <IoIosArrowDown size={30} />
+              <IoIosArrowDown size={30} />
+              <IoIosArrowDown size={30} />
+            </div>
           </header>
 
           <br />
