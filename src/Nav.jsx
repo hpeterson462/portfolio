@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex flex-wrap relative items-center justify-between z-10 w-screen h-5">
+      <nav className="flex flex-wrap relative items-center justify-between z-10 w-full h-5">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
           <ul className="flex">
             <li>
