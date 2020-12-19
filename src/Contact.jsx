@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SiLinkedin } from 'react-icons/si';
 import { ImFileText } from 'react-icons/im';
 import { FaGithubSquare } from 'react-icons/fa';
+import { HiOutlineMail } from "react-icons/hi";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default function Contact() {
@@ -23,14 +24,14 @@ export default function Contact() {
       <br />
 
       <div className="min-h-screen pt-5">
-        <p className="bg-gray-50 p-5 w-2/6 m-auto rounded text-4xl text-lightBlue p-2">Get in touch!</p>
+        <p className="w-2/6 m-auto rounded text-4xl text-lightBlue">Get in touch!</p>
 
-        <div className="flex flex-row flex-wrap items-center justify-center p-5">
+        <div className="flex flex-row flex-wrap items-center justify-center p-3">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
-            <div className="flex justify-center animate-bounce text-lightGray">
+            <section className="flex justify-center animate-bounce text-lightGray pt-8">
               <IoIosArrowDown size={30} />
-            </div>
-            <div className="flex items-center justify-center p-5 pt-10">
+            </section>
+            <div className="flex items-center justify-center p-5 pt-1">
               <div className="p-1 rounded hover:text-lightBlue hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray pr-1">
                 <FaGithubSquare size={45} onClick={handleGitClick} />
               </div>
@@ -39,7 +40,7 @@ export default function Contact() {
               </div>
               <span className="p-2 text-2xl">
                 /hpeterson462
-            </span>
+                </span>
             </div>
             <div className="flex items-center justify-center">
               <div className="p-1 rounded hover:text-lightBlue hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
@@ -49,9 +50,15 @@ export default function Contact() {
               </div>
               <span className="pl-2 text-2xl">Resume</span>
             </div>
+            <div className="flex items-center justify-center">
+              <div className="text-lightGray">
+                <Link to="">
+                  <HiOutlineMail size={45} />
+                </Link>
+              </div>
+              <span className="pl-2 text-2xl">hpeterson462@gmail.com</span>
+            </div>
           </div>
-
-          <Form />
 
           <section className="flex flex-col">
             <div className="flex animate-pulse text-lightGray">
