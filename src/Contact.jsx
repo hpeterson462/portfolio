@@ -26,7 +26,7 @@ export default function Contact() {
 
         <div className="flex flex-row flex-wrap items-center justify-center p-5">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
-            <div className="flex items-center justify-center p-5 pt-20">
+            <div className="flex items-center justify-center p-5 pt-10">
               <div className="hover:text-red-400 hover:shadow-md cursor-pointer pr-1">
                 <FaGithubSquare size={45} onClick={handleGitClick} />
               </div>

@@ -1,16 +1,29 @@
 import React from 'react';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Projects() {
   const handlePClick = () => {
     window.location.replace('https://page-trade.netlify.app/')
   }
 
+  const handlePgClick = () => {
+    window.location.replace('https://github.com/NoShelfControl')
+  }
+
   const handleSClick = () => {
     window.location.replace('https://sherlockstocks.netlify.app/')
   }
 
+  const handleSgClick = () => {
+    window.location.replace('https://github.com/Sherlock-Stocks')
+  }
+
   const handleCClick = () => {
     window.location.replace('https://cumuli.netlify.app/')
+  }
+
+  const handleCgClick = () => {
+    window.location.replace('https://github.com/CumulusWeatherApp')
   }
 
   return (
@@ -23,7 +36,7 @@ export default function Projects() {
 
       <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen">
 
-        <section className="p-5 flex items-center justify-around">
+        <section className="p-5 flex items-center justify-around flex-col">
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               PageTrade
@@ -32,9 +45,12 @@ export default function Projects() {
               <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePClick}></div>
             </div>
           </div>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handlePgClick}>
+            <FaGithubSquare size={30} />
+          </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around">
+        <section className="p-5 flex items-center justify-around flex-col">
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Sherlock Stocks
@@ -43,9 +59,12 @@ export default function Projects() {
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSClick}></div>
             </div>
           </div>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleSgClick}>
+            <FaGithubSquare size={30} />
+          </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around">
+        <section className="p-5 flex items-center justify-around flex-col">
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Cumulus
@@ -53,6 +72,9 @@ export default function Projects() {
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCClick}></div>
             </div>
+          </div>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleCgClick}>
+            <FaGithubSquare size={30} />
           </div>
         </section>
       </main>
