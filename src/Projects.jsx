@@ -2,27 +2,27 @@ import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Projects() {
-  const handlePClick = () => {
+  const handlePageTClick = () => {
     window.location.replace('https://page-trade.netlify.app/')
   }
 
-  const handlePgClick = () => {
+  const handlePageTGithubClick = () => {
     window.location.replace('https://github.com/NoShelfControl')
   }
 
-  const handleSClick = () => {
+  const handleSherlockClick = () => {
     window.location.replace('https://sherlockstocks.netlify.app/')
   }
 
-  const handleSgClick = () => {
+  const handleSherlockGithubClick = () => {
     window.location.replace('https://github.com/Sherlock-Stocks')
   }
 
-  const handleCClick = () => {
+  const handleCumulusClick = () => {
     window.location.replace('https://cumuli.netlify.app/')
   }
 
-  const handleCgClick = () => {
+  const handleCumulusGithubClick = () => {
     window.location.replace('https://github.com/CumulusWeatherApp')
   }
 
@@ -42,10 +42,10 @@ export default function Projects() {
               PageTrade
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePClick}></div>
+              <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePageTClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handlePgClick}>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handlePageTGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
@@ -56,10 +56,10 @@ export default function Projects() {
               Sherlock Stocks
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSClick}></div>
+              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSherlockClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleSgClick}>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleSherlockGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
@@ -70,10 +70,10 @@ export default function Projects() {
               Cumulus
           </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCClick}></div>
+              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCumulusClick}></div>
             </div>
           </div>
-          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleCgClick}>
+          <div className="text-lightGray hover:text-white cursor-pointer opacity-50" onClick={handleCumulusGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
