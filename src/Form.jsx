@@ -37,7 +37,7 @@ export default function Form() {
             <textarea className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" type="text" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
           </div>
         </section>
-        <button className="text-darkGray shadow hover:bg-lightBlue cursor-pointer focus:shadow-outline py-2 px-4 rounded transition duration-500 ease-in-out" onClick={handleClick}>
+        <button className="text-darkGray shadow hover:bg-lightBlue cursor-pointer focus:shadow-outline focus:outline-none py-1 px-4 rounded transition duration-500 ease-in-out" onClick={handleClick}>
           Send
         </button>
       </form >

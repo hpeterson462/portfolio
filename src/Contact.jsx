@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SiLinkedin } from 'react-icons/si';
 import { ImFileText } from 'react-icons/im';
 import { FaGithubSquare } from 'react-icons/fa';
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default function Contact() {
 
@@ -26,6 +27,9 @@ export default function Contact() {
 
         <div className="flex flex-row flex-wrap items-center justify-center p-5">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
+            <div className="flex justify-center animate-bounce text-lightGray">
+              <IoIosArrowDown size={30} />
+            </div>
             <div className="flex items-center justify-center p-5 pt-10">
               <div className="hover:text-red-400 cursor-pointer transition duration-500 ease-in-out text-lightGray pr-1">
                 <FaGithubSquare size={45} onClick={handleGitClick} />
@@ -48,6 +52,15 @@ export default function Contact() {
           </div>
 
           <Form />
+
+          <section className="flex flex-col">
+            <div className="flex animate-pulse text-lightGray">
+              <IoIosArrowUp size={30} />
+            </div>
+            <div className="flex animate-pulse text-lightGray">
+              <IoIosArrowUp size={30} />
+            </div>
+          </section>
 
         </div>
       </div>
