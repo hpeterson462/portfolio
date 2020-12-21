@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from './Form';
 import { Link } from 'react-router-dom';
 import { SiLinkedin } from 'react-icons/si';
 import { ImFileText } from 'react-icons/im';
