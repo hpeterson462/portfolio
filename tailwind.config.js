@@ -34,4 +34,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  extends: ["plugin:tailwind/recommended"]
 }
