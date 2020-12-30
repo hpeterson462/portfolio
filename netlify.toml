@@ -1,6 +1,0 @@
-[build]
-  publish = "build/"
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/public/:splat"
-  status = 200
