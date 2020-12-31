@@ -5,6 +5,7 @@
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@fullhuman/postcss-purgecss": "^3.1.3",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.3.0",
@@ -18,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
     "react-scripts": "4.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "typeface-roboto": "^1.1.13",
     "web-vitals": "^0.2.4"
   },
