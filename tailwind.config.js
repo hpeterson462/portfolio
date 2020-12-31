@@ -1,3 +1,5 @@
+const extend = require('tailwindcss/plugin');
+
 module.exports = {
   purge: ['./src/**/*.js', './public/index.html'],
   darkMode: 'media', //false, media, or class
