@@ -26,7 +26,7 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        <div className="flex h-90 w-80 m-auto">
+        <div className="flex h-1/2 w-80 m-auto">
           <img src={heather} alt="Heather" />
         </div>
       </div>
