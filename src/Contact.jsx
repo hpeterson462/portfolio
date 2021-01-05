@@ -8,12 +8,14 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default function Contact() {
 
-  const handleLiClick = () => {
-    window.location.replace('https://www.linkedin.com/in/hpeterson462/')
+  const handleLiClick = (e) => {
+    e.preventDefault();
+    window.open('https://www.linkedin.com/in/hpeterson462/')
   }
 
-  const handleGitClick = () => {
-    window.location.replace('https://github.com/hpeterson462')
+  const handleGitClick = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/hpeterson462')
   }
 
   return (
@@ -51,9 +53,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center justify-center">
               <div className="text-lightGray">
-                <Link to="">
-                  <HiOutlineMail size={45} />
-                </Link>
+                <HiOutlineMail size={45} />
               </div>
               <span className="pl-2 text-2xl">hpeterson462@gmail.com</span>
             </div>
