@@ -3,28 +3,34 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Projects() {
-  const handlePageTClick = () => {
-    window.location.replace('https://page-trade.netlify.app/')
+  const handlePageTClick = (e) => {
+    e.preventDefault();
+    window.open('https://page-trade.netlify.app/')
   }
 
-  const handlePageTGithubClick = () => {
-    window.location.replace('https://github.com/NoShelfControl')
+  const handlePageTGithubClick = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/NoShelfControl')
   }
 
-  const handleSherlockClick = () => {
-    window.location.replace('https://sherlockstocks.netlify.app/')
+  const handleSherlockClick = (e) => {
+    e.preventDefault();
+    window.open('https://sherlockstocks.netlify.app/')
   }
 
-  const handleSherlockGithubClick = () => {
-    window.location.replace('https://github.com/Sherlock-Stocks')
+  const handleSherlockGithubClick = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/Sherlock-Stocks')
   }
 
-  const handleCumulusClick = () => {
-    window.location.replace('https://cumuli.netlify.app/')
+  const handleCumulusClick = (e) => {
+    e.preventDefault();
+    window.open('https://cumuli.netlify.app/')
   }
 
-  const handleCumulusGithubClick = () => {
-    window.location.replace('https://github.com/CumulusWeatherApp')
+  const handleCumulusGithubClick = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/CumulusWeatherApp')
   }
 
   return (
