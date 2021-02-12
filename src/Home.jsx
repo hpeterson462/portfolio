@@ -7,6 +7,7 @@ import Contact from './Contact';
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Home() {
+
   return (
     <div>
       <Nav />
