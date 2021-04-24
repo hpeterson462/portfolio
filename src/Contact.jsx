@@ -33,10 +33,10 @@ export default function Contact() {
               <IoIosArrowDown size={30} />
             </section>
             <div className="flex items-center justify-center p-5 pt-1">
-              <div className="p-1 rounded hover:text-lightBlue hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray pr-1">
+              <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray pr-1">
                 <FaGithubSquare size={45} onClick={handleGitClick} />
               </div>
-              <div className="p-1 rounded hover:text-lightBlue hover:bg-lightGray hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
+              <div className="p-1 rounded hover:text-red-400 hover:bg-lightGray hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <SiLinkedin size={40} onClick={handleLiClick} />
               </div>
               <span className="p-2 text-2xl">
@@ -44,7 +44,7 @@ export default function Contact() {
                 </span>
             </div>
             <div className="flex items-center justify-center">
-              <div className="p-1 rounded hover:text-lightBlue hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
+              <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <Link to="/resume">
                   <ImFileText size={40} />
                 </Link>
@@ -52,9 +52,9 @@ export default function Contact() {
               <span className="pl-2 text-2xl">Resume</span>
             </div>
             <div className="flex items-center justify-center">
-              <div className="text-lightGray">
+              <a href="mailto:hpeterson462@gmail.com" className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <HiOutlineMail size={45} />
-              </div>
+              </a>
               <span className="pl-2 text-2xl">hpeterson462@gmail.com</span>
             </div>
           </div>
