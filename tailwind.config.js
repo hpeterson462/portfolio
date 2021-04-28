@@ -14,6 +14,7 @@ module.exports = {
         'pageTrade': "url('/src/assets/pageTrade.png')",
         'sherlockStocks': "url('/src/assets/sherlockStocks.png')",
         'babyMe': "url('/src/assets/babyMe.png')",
+        'cumulus': "url('/src/assets/cumulus.png')",
       }),
       textColor: {
         'lightBlue': '#7cd6dc',

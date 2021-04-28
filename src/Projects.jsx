@@ -33,6 +33,16 @@ export default function Projects() {
     window.open('https://babyme.netlify.app/')
   }
 
+  const handleCumulusGithubClick = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/CumulusWeatherApp')
+  }
+
+  const handleCumulusClick = (e) => {
+    e.preventDefault();
+    window.open('https://cumuli.netlify.app/')
+  }
+
   return (
     <div>
       <div>
@@ -90,6 +100,23 @@ export default function Projects() {
             </div>
           </div>
           <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleSherlockGithubClick}>
+            <FaGithubSquare size={30} />
+          </div>
+        </section>
+
+        <section className="p-5 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              Cumulus
+          </div>
+            <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
+              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCumulusClick}></div>
+            </div>
+          </div>
+          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleCumulusGithubClick}>
             <FaGithubSquare size={30} />
           </div>
         </section>
