@@ -15,6 +15,7 @@ module.exports = {
         'sherlockStocks': "url('/src/assets/sherlockStocks.png')",
         'babyMe': "url('/src/assets/babyMe.png')",
         'cumulus': "url('/src/assets/cumulus.png')",
+        'heatTransfer': "url('/src/assets/heatTransfer.png')",
       }),
       textColor: {
         'lightBlue': '#7cd6dc',
