@@ -63,7 +63,7 @@ export default function Projects() {
 
       <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen">
 
-        <section className="p-5 flex items-center justify-around flex-col">
+        <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
@@ -80,7 +80,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around flex-col">
+        <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
@@ -97,7 +97,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around flex-col">
+        <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
@@ -114,7 +114,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around flex-col">
+        <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
@@ -131,7 +131,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-5 flex items-center justify-around flex-col">
+        <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
