@@ -43,15 +43,15 @@ export default function Projects() {
     window.open('https://cumuli.netlify.app/')
   }
 
-  const handleHeatTransGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/hpeterson462/heattransfersystemsinc')
-  }
+  // const handleHeatTransGithubClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://github.com/hpeterson462/heattransfersystemsinc')
+  // }
 
-  const handleHeatTransClick = (e) => {
-    e.preventDefault();
-    window.open('https://heattransfersystems.netlify.app/')
-  }
+  // const handleHeatTransClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://heattransfersystems.netlify.app/')
+  // }
 
   return (
     <div>
@@ -80,7 +80,7 @@ export default function Projects() {
           </div>
         </section>
 
-        <section className="p-10 flex items-center justify-around flex-col">
+        {/* <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
             <IoIosArrowDown size={30} />
           </div>
@@ -95,7 +95,7 @@ export default function Projects() {
           <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleHeatTransGithubClick}>
             <FaGithubSquare size={30} />
           </div>
-        </section>
+        </section> */}
 
         <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
