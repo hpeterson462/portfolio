@@ -7,14 +7,14 @@ export default function Navbar() {
     <>
       <nav className="flex flex-wrap relative items-center justify-between z-10 w-full h-5">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-evenly">
-          <ul className="flex">
+          <ul className="flex font-header">
             <li>
               <Link
                 className="flex items-center uppercase tracking-wide leading-snug cursor-pointer text-md p-8 mr-5 hover:text-red-400 w-20 transition duration-500 ease-in-out"
                 to="#home"
               >
                 Home
-                </Link>
+              </Link>
             </li>
             <li>
               <Link
@@ -22,7 +22,7 @@ export default function Navbar() {
                 to="#projects"
               >
                 Projects
-                </Link>
+              </Link>
             </li>
             <li>
               <Link
@@ -30,7 +30,7 @@ export default function Navbar() {
                 to="#aboutme"
               >
                 About Me
-                </Link>
+              </Link>
             </li>
             <li>
               <Link
@@ -38,7 +38,7 @@ export default function Navbar() {
                 to="#techstack"
               >
                 Tech Stack
-                </Link>
+              </Link>
             </li>
             <li>
               <Link
@@ -46,7 +46,7 @@ export default function Navbar() {
                 to="#contact"
               >
                 Contact
-                </Link>
+              </Link>
             </li>
           </ul>
         </div>

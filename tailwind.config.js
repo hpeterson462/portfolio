@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'display': ["Roboto", "sans-serif", "Ariel"]
+        header: ['Raleway', 'sans-serif'],
+        body: ['Lora', 'serif']
       },
       backgroundImage: theme => ({
         'dots': "url('/src/assets/dots.png')",
