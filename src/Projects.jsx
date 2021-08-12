@@ -70,7 +70,7 @@ export default function Projects() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               BabyMe
-          </div>
+            </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover" onClick={handleBabyMeClick}></div>
             </div>
@@ -104,7 +104,7 @@ export default function Projects() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               PageTrade
-          </div>
+            </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
               <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePageTClick}></div>
             </div>
@@ -121,7 +121,7 @@ export default function Projects() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Sherlock Stocks
-          </div>
+            </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSherlockClick}></div>
             </div>
@@ -138,7 +138,7 @@ export default function Projects() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Cumulus
-          </div>
+            </div>
             <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
               <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCumulusClick}></div>
             </div>
