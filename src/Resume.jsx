@@ -1,10 +1,18 @@
 import React from 'react';
-import resume from './assets/resume.png';
+import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack";
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import PDF from './assets/resume.pdf';
 
-export default function Resume() {
-  return (
-    <div className="m-40">
-      <img src={resume} alt="Resume" />
-    </div>
-  )
-}
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+const Resume = () => (
+  <Document
+    className='flex justify-center m-5'
+    file={PDF}
+    onContextMenu={(e) => e.preventDefault()}
+  >
+    <Page pageNumber={1} />
+  </Document>
+);
+
+export default Resume;

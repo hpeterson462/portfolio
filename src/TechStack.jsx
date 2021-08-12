@@ -26,7 +26,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               HTML
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiHtml5 size={160} />
@@ -39,7 +39,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               JavaScript
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiJsBadge size={150} />
@@ -52,7 +52,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               React
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiReact size={150} />
@@ -65,7 +65,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               CSS
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiCss3 size={150} />
@@ -78,7 +78,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Sass
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiSass size={150} />
@@ -91,7 +91,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               Node.js
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <DiNodejsSmall size={150} />
@@ -104,7 +104,7 @@ export default function TechStack() {
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
               PostgreSQL
-          </div>
+            </div>
             <div className="absolute inset-0 transform hover:translate-y-10 transition duration-300">
               <div className="flex justify-center items-center h-full w-full bg-white rounded-lg shadow-2xl">
                 <SiPostgresql size={150} />
