@@ -13,11 +13,11 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function TechStack() {
   return (
     <div className="mt-20">
-      <h3 className="text-5xl text-lightBlue mb-5" id="techstack">Tech Stack</h3>
+      <h3 className="text-5xl text-lightBlue mb-5 font-header" id="techstack">Tech Stack</h3>
 
       <br />
 
-      <div className="flex flex-row flex-wrap items-center justify-center bg-lightBlue min-h-screen">
+      <div className="flex flex-row flex-wrap items-center justify-center bg-lightBlue min-h-screen italic font-body">
         <div className="flex justify-center animate-bounce text-lightGray">
           <IoIosArrowDown size={30} />
         </div>

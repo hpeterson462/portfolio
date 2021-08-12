@@ -56,12 +56,12 @@ export default function Projects() {
   return (
     <div>
       <div>
-        <h3 className="text-5xl text-lightBlue mb-5" id="projects">Projects</h3>
+        <h3 className="text-5xl text-lightBlue mb-5 font-header" id="projects">Projects</h3>
       </div>
 
       <br />
 
-      <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen">
+      <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body">
 
         <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">

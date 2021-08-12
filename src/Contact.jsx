@@ -20,12 +20,12 @@ export default function Contact() {
 
   return (
     <div className="mt-20">
-      <h3 className="text-5xl italic" id="contact">Contact</h3>
+      <h3 className="text-5xl font-header" id="contact">Contact</h3>
 
       <br />
 
       <div className="min-h-screen pt-5">
-        <p className="w-2/6 m-auto rounded text-4xl text-lightBlue">Get in touch!</p>
+        <p className="w-2/6 m-auto rounded text-4xl text-lightBlue font-body">Get in touch!</p>
 
         <div className="flex flex-row flex-wrap items-center justify-center p-3">
           <div className="flex flex-col w-2/5 bg-dots2 bg-contain bg-no-repeat bg-left-bottom pb-80">
@@ -39,9 +39,9 @@ export default function Contact() {
               <div className="p-1 rounded hover:text-red-400 hover:bg-lightGray hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <SiLinkedin size={40} onClick={handleLiClick} />
               </div>
-              <span className="p-2 text-2xl">
+              <span className="p-2 text-2xl font-body">
                 /hpeterson462
-                </span>
+              </span>
             </div>
             <div className="flex items-center justify-center">
               <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
@@ -49,13 +49,13 @@ export default function Contact() {
                   <ImFileText size={40} />
                 </Link>
               </div>
-              <span className="pl-2 text-2xl">Resume</span>
+              <span className="pl-2 text-2xl font-body">Resume</span>
             </div>
             <div className="flex items-center justify-center">
               <a href="mailto:hpeterson462@gmail.com" className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                 <HiOutlineMail size={45} />
               </a>
-              <span className="pl-2 text-2xl">hpeterson462@gmail.com</span>
+              <span className="pl-2 text-2xl font-body">hpeterson462@gmail.com</span>
             </div>
           </div>
 
