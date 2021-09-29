@@ -1,48 +1,120 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
+//import babyMe from './assets/babyMe.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Projects() {
-  const handlePageTClick = (e) => {
-    e.preventDefault();
-    window.open('https://page-trade.netlify.app/')
-  }
 
-  const handlePageTGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/NoShelfControl')
-  }
+  const projects = [
+    {
+      title: 'BabyMe',
+      image: 'babyMe',
+      websiteLink: 'https://babyme.netlify.app/',
+      gitHubLink: 'https://github.com/hpeterson462/BabyMe',
+    },
+    {
+      title: 'PageTrade',
+      image: 'bg-pageTrade',
+      websiteLink: 'https://page-trade.netlify.app/',
+      gitHubLink: 'https://github.com/NoShelfControl',
+    },
+    {
+      title: 'SherlockStocks',
+      image: 'bg-sherlockStocks',
+      websiteLink: 'https://sherlockstocks.netlify.app/',
+      gitHubLink: 'https://github.com/Sherlock-Stocks',
+    },
+    {
+      title: 'Cumulus',
+      image: 'bg-cumulus',
+      websiteLink: 'https://cumuli.netlify.app/',
+      gitHubLink: 'https://github.com/CumulusWeatherApp',
+    },
+  ]
 
-  const handleSherlockClick = (e) => {
-    e.preventDefault();
-    window.open('https://sherlockstocks.netlify.app/')
-  }
+  const displayProjectCards = projects.map(
+    (projects, index) =>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        delay="1"
+        key={projects.title + index}
+      >
+        <section className="p-10 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              {projects.title}
+            </div>
+            <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
+              <a className="h-full w-full rounded-lg shadow-2xl bg-cover bg-center">
+                <img src={projects.image} alt={`${projects.title}`} />
+              </a>
+              <a
+                className="ext-link"
+                target="_blank"
+                rel="noreferrer"
+                href={projects.websiteLink}
+              >
+              </a>
+            </div>
+          </div>
+          <a
+            className="ext-link"
+            target="_blank"
+            rel="noreferrer"
+            href={projects.gitHubLink}
+          >
+            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50">
 
-  const handleSherlockGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/Sherlock-Stocks')
-  }
+              <FaGithubSquare size={30} />
+            </div>
+          </a>
+        </section>
+      </ScrollAnimation>
+  )
 
-  const handleBabyMeGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/hpeterson462/BabyMe')
-  }
+  // const handlePageTClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://page-trade.netlify.app/')
+  // }
 
-  const handleBabyMeClick = (e) => {
-    e.preventDefault();
-    window.open('https://babyme.netlify.app/')
-  }
+  // const handlePageTGithubClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://github.com/NoShelfControl')
+  // }
 
-  const handleCumulusGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/CumulusWeatherApp')
-  }
+  // const handleSherlockClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://sherlockstocks.netlify.app/')
+  // }
 
-  const handleCumulusClick = (e) => {
-    e.preventDefault();
-    window.open('https://cumuli.netlify.app/')
-  }
+  // const handleSherlockGithubClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://github.com/Sherlock-Stocks')
+  // }
+
+  // const handleBabyMeGithubClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://github.com/hpeterson462/BabyMe')
+  // }
+
+  // const handleBabyMeClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://babyme.netlify.app/')
+  // }
+
+  // const handleCumulusGithubClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://github.com/CumulusWeatherApp')
+  // }
+
+  // const handleCumulusClick = (e) => {
+  //   e.preventDefault();
+  //   window.open('https://cumuli.netlify.app/')
+  // }
 
   // const handleHeatTransGithubClick = (e) => {
   //   e.preventDefault();
@@ -70,7 +142,9 @@ export default function Projects() {
 
       <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body">
 
-        <ScrollAnimation
+        {displayProjectCards}
+
+        {/* <ScrollAnimation
           animateIn="fadeIn"
           delay="1"
         >
@@ -90,7 +164,7 @@ export default function Projects() {
               <FaGithubSquare size={30} />
             </div>
           </section>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
 
         {/* <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
@@ -109,7 +183,7 @@ export default function Projects() {
           </div>
         </section> */}
 
-        <ScrollAnimation
+        {/* <ScrollAnimation
           animateIn="fadeIn"
           delay="1"
         >
@@ -151,9 +225,9 @@ export default function Projects() {
               <FaGithubSquare size={30} />
             </div>
           </section>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
 
-        <ScrollAnimation
+        {/* <ScrollAnimation
           animateIn="fadeIn"
           delay="1"
         >
@@ -173,7 +247,7 @@ export default function Projects() {
               <FaGithubSquare size={30} />
             </div>
           </section>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
 
       </main>
     </div>
