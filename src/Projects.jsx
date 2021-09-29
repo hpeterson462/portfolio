@@ -1,58 +1,92 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
+import babyMe from './assets/babyMe.png';
+import heatTransfer from './assets/heatTransfer.png';
+import pageTrade from './assets/pageTrade.png';
+import sherlockStocks from './assets/sherlockStocks.png';
+import cumulus from './assets/cumulus.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Projects() {
-  const handlePageTClick = (e) => {
-    e.preventDefault();
-    window.open('https://page-trade.netlify.app/')
-  }
 
-  const handlePageTGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/NoShelfControl')
-  }
+  const project = [
+    {
+      title: 'BabyMe',
+      image: babyMe,
+      websiteLink: 'https://babyme.netlify.app/',
+      gitHubLink: 'https://github.com/hpeterson462/BabyMe',
+    },
+    {
+      title: 'Heat Transfer Systems',
+      image: heatTransfer,
+      websiteLink: 'https://heattransfersystems.netlify.app/',
+      gitHubLink: 'https://github.com/hpeterson462/heattransfersystemsinc',
+    },
+    {
+      title: 'PageTrade',
+      image: pageTrade,
+      websiteLink: 'https://page-trade.netlify.app/',
+      gitHubLink: 'https://github.com/NoShelfControl',
+    },
+    {
+      title: 'SherlockStocks',
+      image: sherlockStocks,
+      websiteLink: 'https://sherlockstocks.netlify.app/',
+      gitHubLink: 'https://github.com/Sherlock-Stocks',
+    },
+    {
+      title: 'Cumulus',
+      image: cumulus,
+      websiteLink: 'https://cumuli.netlify.app/',
+      gitHubLink: 'https://github.com/CumulusWeatherApp',
+    },
+  ];
 
-  const handleSherlockClick = (e) => {
-    e.preventDefault();
-    window.open('https://sherlockstocks.netlify.app/')
-  }
+  const displayProjectCards = project.map(
+    (project, index) =>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        delay="1"
+        key={project.title + index}
+      >
+        <section className="p-10 flex items-center justify-around flex-col">
+          <div className="mb-5 animate-bounce text-lightGray">
+            <IoIosArrowDown size={30} />
+          </div>
+          <div className="h-52 w-52 relative cursor-pointer mb-5">
+            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
+              {project.title}
+            </div>
+            <div className="absolute inset-0 transform hover:scale-75 transition duration-300">
+              <a
+                className="h-full w-full rounded-lg shadow-2xl bg-cover bg-center ext-link"
+                target="_blank"
+                rel="noreferrer"
+                href={project.websiteLink}
+              >
+                <img
+                  className="h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover"
+                  src={project.image}
+                  alt={`${project.title}`}
+                />
+              </a>
+            </div>
+          </div>
+          <a
+            className="ext-link"
+            target="_blank"
+            rel="noreferrer"
+            href={project.gitHubLink}
+          >
+            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50">
 
-  const handleSherlockGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/Sherlock-Stocks')
-  }
-
-  const handleBabyMeGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/hpeterson462/BabyMe')
-  }
-
-  const handleBabyMeClick = (e) => {
-    e.preventDefault();
-    window.open('https://babyme.netlify.app/')
-  }
-
-  const handleCumulusGithubClick = (e) => {
-    e.preventDefault();
-    window.open('https://github.com/CumulusWeatherApp')
-  }
-
-  const handleCumulusClick = (e) => {
-    e.preventDefault();
-    window.open('https://cumuli.netlify.app/')
-  }
-
-  // const handleHeatTransGithubClick = (e) => {
-  //   e.preventDefault();
-  //   window.open('https://github.com/hpeterson462/heattransfersystemsinc')
-  // }
-
-  // const handleHeatTransClick = (e) => {
-  //   e.preventDefault();
-  //   window.open('https://heattransfersystems.netlify.app/')
-  // }
+              <FaGithubSquare size={30} />
+            </div>
+          </a>
+        </section>
+      </ScrollAnimation>
+  )
 
   return (
     <div>
@@ -60,7 +94,10 @@ export default function Projects() {
         <ScrollAnimation
           animateIn="fadeIn"
         >
-          <h3 className="text-5xl text-lightBlue mb-5 font-header" id="projects">
+          <h3
+            className="text-5xl text-lightBlue mb-5 font-header"
+            id="projects"
+          >
             Projects
           </h3>
         </ScrollAnimation>
@@ -70,110 +107,7 @@ export default function Projects() {
 
       <main className="flex flex-row flex-wrap bg-lightBlue justify-evenly items-center min-h-screen italic font-body">
 
-        <ScrollAnimation
-          animateIn="fadeIn"
-          delay="1"
-        >
-          <section className="p-10 flex items-center justify-around flex-col">
-            <div className="mb-5 animate-bounce text-lightGray">
-              <IoIosArrowDown size={30} />
-            </div>
-            <div className="h-52 w-52 relative cursor-pointer mb-5">
-              <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-                BabyMe
-              </div>
-              <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover" onClick={handleBabyMeClick}></div>
-              </div>
-            </div>
-            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleBabyMeGithubClick}>
-              <FaGithubSquare size={30} />
-            </div>
-          </section>
-        </ScrollAnimation>
-
-        {/* <section className="p-10 flex items-center justify-around flex-col">
-          <div className="mb-5 animate-bounce text-lightGray">
-            <IoIosArrowDown size={30} />
-          </div>
-          <div className="h-52 w-52 relative cursor-pointer mb-5">
-            <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-              Heat Transfer Systems
-          </div>
-            <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-heatTransfer bg-cover" onClick={handleHeatTransClick}></div>
-            </div>
-          </div>
-          <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleHeatTransGithubClick}>
-            <FaGithubSquare size={30} />
-          </div>
-        </section> */}
-
-        <ScrollAnimation
-          animateIn="fadeIn"
-          delay="1"
-        >
-          <section className="p-10 flex items-center justify-around flex-col">
-            <div className="mb-5 animate-bounce text-lightGray">
-              <IoIosArrowDown size={30} />
-            </div>
-            <div className="h-52 w-52 relative cursor-pointer mb-5">
-              <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-                PageTrade
-              </div>
-              <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                <div className="h-full w-full rounded-lg shadow-2xl bg-pageTrade bg-cover bg-center" onClick={handlePageTClick}></div>
-              </div>
-            </div>
-            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handlePageTGithubClick}>
-              <FaGithubSquare size={30} />
-            </div>
-          </section>
-        </ScrollAnimation>
-
-        <ScrollAnimation
-          animateIn="fadeIn"
-          delay="1"
-        >
-          <section className="p-10 flex items-center justify-around flex-col">
-            <div className="mb-5 animate-bounce text-lightGray">
-              <IoIosArrowDown size={30} />
-            </div>
-            <div className="h-52 w-52 relative cursor-pointer mb-5">
-              <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-                Sherlock Stocks
-              </div>
-              <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-sherlockStocks bg-cover" onClick={handleSherlockClick}></div>
-              </div>
-            </div>
-            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleSherlockGithubClick}>
-              <FaGithubSquare size={30} />
-            </div>
-          </section>
-        </ScrollAnimation>
-
-        <ScrollAnimation
-          animateIn="fadeIn"
-          delay="1"
-        >
-          <section className="p-10 flex items-center justify-around flex-col">
-            <div className="mb-5 animate-bounce text-lightGray">
-              <IoIosArrowDown size={30} />
-            </div>
-            <div className="h-52 w-52 relative cursor-pointer mb-5">
-              <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-                Cumulus
-              </div>
-              <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                <div className="h-full w-full bg-white rounded-lg shadow-2xl bg-cumulus bg-cover" onClick={handleCumulusClick}></div>
-              </div>
-            </div>
-            <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50" onClick={handleCumulusGithubClick}>
-              <FaGithubSquare size={30} />
-            </div>
-          </section>
-        </ScrollAnimation>
+        {displayProjectCards}
 
       </main>
     </div>
