@@ -1,44 +1,54 @@
 import React from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
-//import babyMe from './assets/babyMe.png';
+import babyMe from './assets/babyMe.png';
+import heatTransfer from './assets/heatTransfer.png';
+import pageTrade from './assets/pageTrade.png';
+import sherlockStocks from './assets/sherlockStocks.png';
+import cumulus from './assets/cumulus.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Projects() {
 
-  const projects = [
+  const project = [
     {
       title: 'BabyMe',
-      image: 'babyMe',
+      image: babyMe,
       websiteLink: 'https://babyme.netlify.app/',
       gitHubLink: 'https://github.com/hpeterson462/BabyMe',
     },
     {
+      title: 'Heat Transfer Systems',
+      image: heatTransfer,
+      websiteLink: 'https://heattransfersystems.netlify.app/',
+      gitHubLink: 'https://github.com/hpeterson462/heattransfersystemsinc',
+    },
+    {
       title: 'PageTrade',
-      image: 'bg-pageTrade',
+      image: pageTrade,
       websiteLink: 'https://page-trade.netlify.app/',
       gitHubLink: 'https://github.com/NoShelfControl',
     },
     {
       title: 'SherlockStocks',
-      image: 'bg-sherlockStocks',
+      image: sherlockStocks,
       websiteLink: 'https://sherlockstocks.netlify.app/',
       gitHubLink: 'https://github.com/Sherlock-Stocks',
     },
     {
       title: 'Cumulus',
-      image: 'bg-cumulus',
+      image: cumulus,
       websiteLink: 'https://cumuli.netlify.app/',
       gitHubLink: 'https://github.com/CumulusWeatherApp',
     },
   ]
 
-  const displayProjectCards = projects.map(
-    (projects, index) =>
+  const displayProjectCards = project.map(
+    (project, index) =>
       <ScrollAnimation
         animateIn="fadeIn"
         delay="1"
-        key={projects.title + index}
+        key={project.title + index}
       >
         <section className="p-10 flex items-center justify-around flex-col">
           <div className="mb-5 animate-bounce text-lightGray">
@@ -46,18 +56,20 @@ export default function Projects() {
           </div>
           <div className="h-52 w-52 relative cursor-pointer mb-5">
             <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl">
-              {projects.title}
+              {project.title}
             </div>
-            <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-              <a className="h-full w-full rounded-lg shadow-2xl bg-cover bg-center">
-                <img src={projects.image} alt={`${projects.title}`} />
-              </a>
+            <div className="absolute inset-0 transform hover:scale-75 transition duration-300">
               <a
-                className="ext-link"
+                className="h-full w-full rounded-lg shadow-2xl bg-cover bg-center ext-link"
                 target="_blank"
                 rel="noreferrer"
-                href={projects.websiteLink}
+                href={project.websiteLink}
               >
+                <img
+                  className="h-full w-full bg-white rounded-lg shadow-2xl bg-babyMe bg-cover"
+                  src={project.image}
+                  alt={`${project.title}`}
+                />
               </a>
             </div>
           </div>
@@ -65,7 +77,7 @@ export default function Projects() {
             className="ext-link"
             target="_blank"
             rel="noreferrer"
-            href={projects.gitHubLink}
+            href={project.gitHubLink}
           >
             <div className="text-lightGray hover:text-white transition duration-500 ease-in-out cursor-pointer opacity-50">
 
