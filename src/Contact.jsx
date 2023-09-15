@@ -61,9 +61,9 @@ export default function Contact() {
                   <Link to="/resume">
                     <ImFileText size={40} />
                   </Link>
-                </div>*/}
+                </div>
                 <span className="pl-2 text-2xl font-body">Resume</span>
-              </div>
+              </div>*/}
               <div className="flex items-center justify-center">
                 <a href="mailto:hpeterson462@gmail.com" className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                   <HiOutlineMail size={45} />
