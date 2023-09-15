@@ -20,7 +20,7 @@ export default function Home() {
               delay="1"
             >
               <h1 className="flex justify-center text-8xl mt-32 z-10 font-header">
-                Heather Peterson
+                Heather Wild
               </h1>
             </ScrollAnimation>
             <br />
