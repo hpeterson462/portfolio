@@ -56,12 +56,12 @@ export default function Contact() {
                   /hpeterson462
                 </span>
               </div>
-              <div className="flex items-center justify-center">
+              {/*<div className="flex items-center justify-center">
                 <div className="p-1 rounded hover:text-red-400 hover:shadow-md cursor-pointer transition duration-500 ease-in-out text-lightGray">
                   <Link to="/resume">
                     <ImFileText size={40} />
                   </Link>
-                </div>
+                </div>*/}
                 <span className="pl-2 text-2xl font-body">Resume</span>
               </div>
               <div className="flex items-center justify-center">
