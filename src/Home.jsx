@@ -24,7 +24,7 @@ export default function Home() {
               </h1>
             </ScrollAnimation>
             <br />
-            <h3 className="text-3xl text-lightBlue font-body">Frontend Software Developer</h3>
+            <h3 className="text-3xl text-lightBlue font-body">Fullstack Software Developer</h3>
             <div className="flex flex-col mt-10 animate-pulse">
               <IoIosArrowDown size={30} />
               <IoIosArrowDown size={30} />
